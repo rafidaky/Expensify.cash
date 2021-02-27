@@ -1,5 +1,6 @@
 # React Performance Tips
 
+
 - Always test performance with the production build as development mode is not optimized.
 - Use [`PureComponent`](https://reactjs.org/docs/react-api.html#reactpurecomponent), [`React.memo()`](https://reactjs.org/docs/react-api.html#reactmemo), and [`shouldComponentUpdate()`](https://reactjs.org/docs/react-component.html#shouldcomponentupdate) to prevent re-rendering expensive components.
 - Using a combination of [React DevTools Profiler](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and [Chrome Dev Tools Performance Timing](https://calibreapp.com/blog/react-performance-profiling-optimization) can help identify unnecessary re-renders. Both tools can be used to time an interaction like the app starting up or navigating to a new screen.
