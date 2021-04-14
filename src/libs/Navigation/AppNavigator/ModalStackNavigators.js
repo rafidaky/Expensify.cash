@@ -13,7 +13,7 @@ import SettingsProfilePage from '../../../pages/settings/ProfilePage';
 import SettingsPreferencesPage from '../../../pages/settings/PreferencesPage';
 import SettingsPasswordPage from '../../../pages/settings/PasswordPage';
 import SettingsPaymentsPage from '../../../pages/settings/PaymentsPage';
-import IOUDetailsPage from '../../../pages/iou/IOUDetailsPage';
+import IOUDetailsModal from '../../../pages/iou/IOUDetailsModal';
 
 // Setup the modal stack navigators so we only have to create them once
 const SettingsModalStack = createStackNavigator();
@@ -73,7 +73,7 @@ const IOUDetailsModalStackNavigator = () => (
     >
         <IOUDetailsModalStack.Screen
             name="IOU_Details_Route"
-            component={IOUDetailsPage}
+            component={IOUDetailsModal}
             options={{
                 title: 'Details',
             }}
